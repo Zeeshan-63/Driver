@@ -7,7 +7,7 @@ This project contains the UI implementation and other functionalities of Deliver
 
 ![iOS App](ScreenShots/signin.png "iOS App")
 
-![iOS App](ScreenShots/signup.png "iOS App")
+![iOS App](ScreenShots/Signup.png "iOS App")
 
 ![iOS App](ScreenShots/deliveryList.png "iOS App")
 
