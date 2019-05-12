@@ -5,17 +5,17 @@ This project contains the UI implementation and other functionalities of Deliver
 
 ## Screenshots
 
-![iOS App](screenShots/signin.png "iOS App")
+![iOS App](ScreenShots/signin.png "iOS App")
 
-![iOS App](screenShots/signup.png "iOS App")
+![iOS App](ScreenShots/signup.png "iOS App")
 
-![iOS App](screenShots/deliveryList.png "iOS App")
+![iOS App](ScreenShots/deliveryList.png "iOS App")
 
-![iOS App](screenShots/mapView.png "iOS App")
+![iOS App](ScreenShots/mapView.png "iOS App")
 
-![iOS App](screenShots/customerDetail.png "iOS App")
+![iOS App](ScreenShots/customerDetail.png "iOS App")
 
-![iOS App](screenShots/completeClose.png "iOS App")
+![iOS App](ScreenShots/completeClose.png "iOS App")
 
 
 ##  Requirements
