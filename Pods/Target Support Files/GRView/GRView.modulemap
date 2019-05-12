@@ -1,0 +1,6 @@
+framework module GRView {
+  umbrella header "GRView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CameraViewController" customModule="Driver" customModuleProvider="target">
+            <connections>
+                <outlet property="captureButton" destination="jY9-Pw-zb4" id="1By-al-X3j"/>
+                <outlet property="galleryButton" destination="arX-8C-Y3O" id="tPn-Ch-cez"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jY9-Pw-zb4">
+                    <rect key="frame" x="152.5" y="547" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="NZp-6H-i3e"/>
+                        <constraint firstAttribute="height" constant="70" id="VMu-9J-MCR"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="capture"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOnTakePhotoButton:" destination="-1" eventType="touchUpInside" id="1Km-Wb-Roo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arX-8C-Y3O">
+                    <rect key="frame" x="263.5" y="559.5" width="65" height="45"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="ZbI-dk-4dw"/>
+                        <constraint firstAttribute="height" constant="45" id="fhT-Xe-19r"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="gallery"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="7"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapOnGalleryButton:" destination="-1" eventType="touchUpInside" id="quc-dF-RjF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="arX-8C-Y3O" firstAttribute="centerY" secondItem="jY9-Pw-zb4" secondAttribute="centerY" id="PbZ-wn-wtL"/>
+                <constraint firstItem="arX-8C-Y3O" firstAttribute="leading" secondItem="jY9-Pw-zb4" secondAttribute="trailing" constant="41" id="gNd-g4-zTP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jY9-Pw-zb4" secondAttribute="bottom" constant="50" id="xll-vm-oOW"/>
+                <constraint firstItem="jY9-Pw-zb4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yw1-dJ-bTZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="capture" width="50" height="50"/>
+        <image name="gallery" width="50" height="50"/>
+    </resources>
+</document>

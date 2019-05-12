@@ -1,0 +1,32 @@
+PODS:
+  - ACFloatingTextfield-Swift (1.7)
+  - GoogleMaps (3.0.3):
+    - GoogleMaps/Maps (= 3.0.3)
+  - GoogleMaps/Base (3.0.3)
+  - GoogleMaps/Maps (3.0.3):
+    - GoogleMaps/Base
+  - GRView (1.0.0)
+  - IQKeyboardManagerSwift (6.2.0)
+
+DEPENDENCIES:
+  - ACFloatingTextfield-Swift (= 1.7)
+  - GoogleMaps
+  - GRView
+  - IQKeyboardManagerSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ACFloatingTextfield-Swift
+    - GoogleMaps
+    - GRView
+    - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  ACFloatingTextfield-Swift: df075d5ed5d441d8603f985fc106ec7ebe0c673f
+  GoogleMaps: fd5c9fa58871781b9fb94d4936f19c69fe60ce32
+  GRView: a88cee402471baec1780eece92cd8646b43ffe02
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+
+PODFILE CHECKSUM: 68921c9f5cdb72c59e561c053a1903ab63f20034
+
+COCOAPODS: 1.6.1
